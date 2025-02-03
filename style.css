@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('assets/montain.jpg'); /* Background for the page */
-    background-size: cover; /* Make sure it covers the whole page */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating */
-    height: 100vh; /* Ensure the body covers the full viewport height */
+    background-image: url('assets/montain.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
 }
 
 #weatherappcontainer {
@@ -14,8 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
-    width: 300px; /* Adjust the width as needed */
+    height: 430px;
+    width: 300px; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -66,4 +66,26 @@ body {
 .button:active {
     transform: translateY(1px);  
 }
+}
+/* The animation code */
+@keyframes example {
+    0% { background-color: rgb(150, 197, 238);}
+    50% { background-color: rgb(155, 165, 191); }
+    100% { background-color: rgb(159, 190, 253); }
+}
+    /*0% { background-color: rgb(255, 255, 255); }
+    25% { background-color: rgb(155, 165, 191); }
+    50% { background-color: rgb(255, 255, 255); }
+    75% { background-color: rgb(176, 200, 248); }
+    100% { background-color: rgb(251, 251, 251); }
+  }   */
+  
+  #weather-details h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #03182b;
+    text-align: center;
+    padding: 10px;
+    animation: example 4s infinite;
+    border-radius: 10px; 
 }
